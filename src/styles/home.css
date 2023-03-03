@@ -1,0 +1,161 @@
+.container {
+    width: 100%;
+    max-width: 960px;
+    padding: 0 1rem;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2em;
+    font-family: 'Leckerli One', cursive;
+    font-weight: 400;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.content h2 {
+    text-align: center;
+    font-family: 'Leckerli One', cursive;
+    font-weight: 400;
+}
+
+.content p {
+    text-align: center;
+    color: #68696c;
+}
+
+.content .form {
+    margin: 30px 0;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.display {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 30px;
+    background: #fff;
+}
+
+
+.display-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+
+.display-container p {
+    /* color: crimson */
+}
+
+
+.display-container button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.display-left {
+    display: none;
+}
+
+.btn button {
+    width: 300px;
+    padding: 15px;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background: #bc0b49;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container input {
+    flex: 1;
+    padding: 15px;
+    outline: none;
+    border: none;
+    background: #eee;
+    border-radius: 5px 0 0 5px;
+    font-weight: 600;
+}
+
+.form-container button {
+    padding: 15px;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: #bc0b49;
+}
+
+@media screen and (min-width: 768px) {
+    .content .form {
+        width: 800px;
+    }
+
+    .display {
+        width: 600px;
+        overflow: hidden;
+    }
+
+    .display-left {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: #f5f8ff;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+    }
+
+    .display-left:hover {
+        background: rgb(201, 214, 245);
+        color: crimson;
+    }
+}
